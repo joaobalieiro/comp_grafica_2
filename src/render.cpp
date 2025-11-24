@@ -344,11 +344,20 @@ void renderScene() {
             Vec3 e1 = w1 - w0;
             Vec3 e2 = w2 - w0;
             Vec3 nFace = normalize(cross(e1, e2));
-            Vec3 posFace = (w0 + w1 + w2) * (1.0f / 3.0f);
+
+            // Garante que a normal de face tenha a mesma orientacao
+            // aproximada que a media das normais de vertice
+            Vec3 nAvg = n0 + n1 + n2;        // nao precisa normalizar
+            if (dot(nFace, nAvg) < 0.0f) {
+                nFace = nFace * -1.0f;       // inverte no caso da esfera
+            }
+
+            Vec3 posFace  = (w0 + w1 + w2) * (1.0f / 3.0f);
             Vec3 avgColor = (base0 + base1 + base2) * (1.0f / 3.0f);
-            Vec3 cFace = renderPhong(posFace, nFace, avgColor);
+            Vec3 cFace    = renderPhong(posFace, nFace, avgColor);
+
             col0 = col1 = col2 = cFace;
-            n0f = n1f = n2f = nFace;
+            n0f  = n1f  = n2f  = nFace;
         } else if (shadingMode == ShadingMode::GOURAUD) {
             col0 = renderPhong(w0, n0, base0);
             col1 = renderPhong(w1, n1, base1);

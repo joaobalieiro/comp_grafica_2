@@ -1,0 +1,9 @@
+# ninja log v5
+23	1159	7857313552121334	CMakeFiles/comp_grafica_2.dir/src/math3D.cpp.obj	8c52f922f68209fb
+42	3878	7857313579299061	CMakeFiles/comp_grafica_2.dir/src/ui.cpp.obj	ff168b53540bd028
+2	4155	7857313582172064	CMakeFiles/comp_grafica_2.dir/src/main.cpp.obj	bddff34d3c4c79af
+94	4729	7857313587852858	CMakeFiles/comp_grafica_2.dir/src/solidos.cpp.obj	34eb43d33c4a639d
+62	4741	7857313587991630	CMakeFiles/comp_grafica_2.dir/src/render.cpp.obj	833ca1150077f17c
+4742	5136	7857313591807904	comp_grafica_2.exe	311e9754b62f4b8d
+7	3449	7857316060869726	CMakeFiles/comp_grafica_2.dir/src/render.cpp.obj	833ca1150077f17c
+3452	3830	7857316064628424	comp_grafica_2.exe	311e9754b62f4b8d

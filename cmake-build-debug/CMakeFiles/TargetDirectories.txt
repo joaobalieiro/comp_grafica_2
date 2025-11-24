@@ -1,0 +1,3 @@
+C:/Users/fonso/Downloads/comp_grafica_2/cmake-build-debug/CMakeFiles/comp_grafica_2.dir
+C:/Users/fonso/Downloads/comp_grafica_2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/fonso/Downloads/comp_grafica_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
