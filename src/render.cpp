@@ -31,7 +31,7 @@ Vec3 lightPos(2.0f, 2.0f, -2.0f);
 Vec3 eyePos(0.0f, 0.0f, 0.0f);
 Vec3 lightColor(1.0f, 1.0f, 1.0f);
 Vec3 Ia(0.1f, 0.1f, 0.1f);
-float ka = 0.3f;
+float ka = 1.0f;
 float kd = 0.8f;
 float ks = 0.5f;
 float shininess = 32.0f;
